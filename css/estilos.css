@@ -1,0 +1,263 @@
+/**/ 
+:root{
+    --c-pral:#f40;/*Mi color favorito del mundo. EL bermellón*/
+    --c-pral-20: #ff440033;
+    --c-sec:#eee;
+    --c-link:#fff;
+    --c-link2:#000;
+}
+body{
+    background-color: var(--c-pral);
+    color: var(--c-sec);
+    font-size:18px;
+    overflow-x: hidden;
+}
+a{
+    color:var(--c-link);text-decoration: none;
+    transition:all 0.3s ease;
+  }
+a:hover{
+  transform:scale(110%);
+  }
+main{
+    width:100%;max-width: 500px;padding:2em;
+    margin:auto;background-color: var(--c-sec);
+    color: var(--c-pral);
+    border-radius:45px 0 0 0;
+}
+main a{
+    color:var(--c-link2);
+  }
+header{
+    padding:72px 36px;position:relative
+}
+header svg{
+    fill:var(--c-link)
+}
+header h1 svg{
+    height:72px
+}
+header nav{
+    position:absolute;top:0;right:calc(-100vw + 72px);padding:0 0 0 72px;
+    width:100vw;height:100vh;
+    transition: all 0.4s ease ;
+
+}
+header nav ul{
+    background-color: var(--c-pral);
+    height:100%;
+    padding:45px 72px;
+}
+header nav ul li{
+margin:0 0 36px 0;
+}
+header nav li a{
+    color:var(--c-link);font-size:1.8em;
+    padding-left:45px;
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: 27px;
+    line-height: 1;  
+}
+header nav li#link-inicio a{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.3 18.3 18.3" fill="%23fff"><circle cx="9.2" cy="8.9" r="2.7"/><path d="M9.1-0.3L0,8.9v9.1h18.2V8.9L9.1-0.3z M1.9,16.2V9.6l7.3-7.3 7.3,7.3v6.5H1.9z"/></svg>');
+
+}
+header nav li#link-usuario a{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"  fill="%23fff"><path d="M10.9,12.1c1-0.6,1.7-1.8,1.7-3.1c0-2-1.6-3.6-3.6-3.6S5.5,7.1,5.5,9.1c0,1.3,0.7,2.4,1.7,3c-2.5,0.8-4.4,3.1-4.4,5.9h12.4C15.2,15.3,13.4,12.9,10.9,12.1z"/><circle cx="16.2" cy="1.8" r="1.7"/><circle cx="13.6" cy="3.7" r="0.9"/><circle cx="12.1" cy="5.1" r="0.4"/></svg>');
+}
+header nav li#link-cerrar a{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="%23fff"><path d="M9,0.9C4.5,0.9,0.9,4.5,0.9,9s3.6,8.1,8.1,8.1c4.5,0,8.1-3.6,8.1-8.1S13.5,0.9,9,0.9z M9,15.3c-3.5,0-6.3-2.8-6.3-6.3S5.6,2.7,9,2.7s6.3,2.8,6.3,6.3S12.5,15.3,9,15.3z"/><rect x="8.1" y="1.8" width="1.8" height="7.2"/></svg>');
+}
+header nav #boton-menu{
+    position:absolute;top:54px;left:18px;width:36px;
+    transition: all 0.3s ease;cursor:pointer;
+}
+h1, h2, h3,h4,h5,h6{
+    text-align: center;
+}
+h1{
+    font-size:2em;width:80%;
+    color:var(--c-sec);
+    position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);
+}
+h2{
+    font-size:1.8em;
+}
+
+form {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 27px;
+
+}
+
+main p{
+    margin:1em 0;
+}
+main strong{
+    background-color: var(--c-pral-20);
+}
+
+small{
+    font-size: 0.8em;
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    font-size:1.2rem;
+    position:relative; top:32px
+   }
+#ficha input[type="file"]{
+  
+        opacity: 0;
+        position: absolute;
+
+   }
+   #perfil {position:relative}
+#perfil figcaption{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);text-align: center;font-size: 0.75em;display: none;padding:2px;background-color: #ffffffba;}
+   #perfil:hover figcaption{
+    display: block;
+   }
+#imagen-perfil{
+    display: block;cursor: pointer;
+    margin:18px auto;
+    width:50%;
+    border-radius: 50%;
+    border:2px solid var(--c-pral);
+   }
+/* Estilos para los inputs de texto y correo */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] ,
+textarea,
+select {
+    width: 100%;
+    padding: 9px 9px 9px 72px;
+    margin-bottom: 18px;
+    border:0;
+    border-bottom: 2px solid var(--c-pral);
+    outline: 0;
+    background-color: transparent;
+ font-size:1.2rem;font-family: "Sofia Sans Condensed", sans-serif;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus ,
+textarea:focus,
+select:focus {
+    border-bottom: 2px dotted var(--c-pral)
+}
+
+
+
+/* Estilos para los botones */
+button,
+input[type="submit"] {
+    font-size:1.2rem;
+    width: 100%;
+    padding: 18px 0;margin: 18px 0;
+    background-color: var(--c-pral);
+    color: var(--c-sec);;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    border-radius:18px 18px 0 18px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #555;
+    color:var(--c-link)
+}
+
+/* Estilos para los checkbox y radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 18px;
+}
+
+/* Agrupar los checkbox y radio en filas */
+.checkbox-group,
+.radio-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los mensajes de error o advertencia */
+.error-message {
+    color: #e34234;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para textarea */
+textarea {
+    height: 100px;
+}
+
+/* Estilo para fieldset */
+fieldset {
+    border: 1px solid var(--c-sec);
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 9px;
+}
+
+/* Estilo para legend */
+legend {
+    font-weight: bold;
+    color: var(--c-pral);
+}
+.cargar {
+    position: relative;cursor:pointer;
+    display: inline-block;
+background-size:40px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 height%3D%2224px%22 viewBox%3D%220 -960 960 960%22 width%3D%2224px%22 fill%3D%22%23f40%22%3E%3Cpath d%3D%22M170-228q-38-45-61-99T80-440h82q6 43 22 82.5t42 73.5l-56 56ZM80-520q8-59 30-113t60-99l56 56q-26 34-42 73.5T162-520H80ZM438-82q-59-6-112.5-28.5T226-170l56-58q35 26 74 43t82 23v80ZM284-732l-58-58q47-37 101-59.5T440-878v80q-43 6-82.5 23T284-732ZM518-82v-80q44-6 83.5-22.5T676-228l58 58q-47 38-101.5 60T518-82Zm160-650q-35-26-75-43t-83-23v-80q59 6 113.5 28.5T734-790l-56 58Zm112 504-56-56q26-34 42-73.5t22-82.5h82q-8 59-30 113t-60 99Zm8-292q-6-43-22-82.5T734-676l56-56q38 45 61 99t29 113h-82ZM441-280v-247L337-423l-56-57 200-200 200 200-57 56-103-103v247h-80Z%22/%3E%3C/svg%3E');
+    margin-bottom: 18px;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  
+
+  
+  .cargar input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+#mensaje{
+    transition: all 0.5s ease;
+    opacity: 0;
+    width: 400px;position:absolute;
+    top:50px; left:50%; transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 8px 20px rgba(0, 128, 255, 0.3), 0px 0px 10px rgba(0, 128, 255, 0.5);
+    padding:10px;
+    text-align: center;
+    background-color: #fff;
+    color:#000;
+    cursor:pointer
+
+}
+
+@keyframes rodar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#rueda{
+    animation: rodar 2s linear infinite;
+    width:40px;margin:20px auto;
+}
