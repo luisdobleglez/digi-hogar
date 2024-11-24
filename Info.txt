@@ -1,10 +1,10 @@
 MySQL
  contraseña: elAlumnado_a_veces_es_Muy_tr4vi3so
 <?php
-  $host_name = 'db5016617248.hosting-data.io';
-  $database = 'dbs13472821';
-  $user_name = 'dbu349122';
-  $password = 'elAlumnado_a_veces_es_Muy_tr4vi3so';
+  $host_name = '';
+  $database = '';
+  $user_name = '';
+  $password = '';
 
   $link = new mysqli($host_name, $user_name, $password, $database);
 
